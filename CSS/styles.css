@@ -1,0 +1,15 @@
+#red-header {
+  background-color: maroon;
+  height: 150px;
+  color: rgba(255, 255, 255, 0.671);
+  font-family: "Impact";
+}
+
+.header-logo {
+  height: 145px;
+  width: 145px;
+}
+
+.header-text {
+  margin-top: 25px;
+}
