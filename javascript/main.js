@@ -8,3 +8,13 @@ var config = {
   messagingSenderId: "14469084525"
 };
 firebase.initializeApp(config);
+
+var roomCount = 0;
+
+$("#add-room-btn").on("click", function(){
+  roomCount++;
+  var dynamicDiv = $("<div>").addClass("col-3 dynamic-div");
+  var dynamicBtn = $("<button>").addClass("btn btn-dark room-btn").text("Room " + roomCount)
+  dynamicDiv.html(dynamicBtn);
+  $(".room-stage").append(dynamicDiv);
+});
